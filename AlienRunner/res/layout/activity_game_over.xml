@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg_00"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+        android:id = "@+id/layout_gameover"
+        android:layout_width = "400dp"
+        android:layout_height = "160dp"
+        android:orientation = "horizontal"
+        android:layout_centerInParent = "true"
+        android:weightSum = "10" >
+        
+        <ImageView
+            android:id = "@+id/img_gameover_char"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "2"
+			android:src = "@drawable/alien_01_shop" />
+        
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "8"
+            android:orientation = "vertical"
+            android:background = "@drawable/dialog_confirm"
+            android:padding = "16dp" >
+            
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:weightSum = "10" >
+                
+                <ImageView
+	                android:layout_width = "0dp"
+	                android:layout_height = "match_parent"
+	                android:layout_weight = "4"
+	                android:src = "@drawable/gameover_text_score" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_score"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "6"
+                    android:text = "0000000"
+                    android:textColor = "#008099"
+                    android:textSize = "24sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                           
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:weightSum = "10" >
+                
+                <ImageView
+	                android:layout_width = "0dp"
+	                android:layout_height = "match_parent"
+	                android:layout_weight = "4"
+	                android:src = "@drawable/gameover_text_record" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_record"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "6"
+                    android:text = "0000000"
+                    android:textColor = "#008099"
+                    android:textSize = "24sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                           
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:weightSum = "10" >
+                
+                <ImageView
+	                android:layout_width = "0dp"
+	                android:layout_height = "match_parent"
+	                android:layout_weight = "4"
+	                android:src = "@drawable/gameover_text_get" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.6"
+                    android:src = "@drawable/coin_01_bronze" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.3"
+                    android:src = "@drawable/ui_cross" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_get_coin"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "2.4"
+                    android:text = "000000"
+                    android:textColor = "#008099"
+                    android:textSize = "18sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.7"
+                    android:src = "@drawable/item_04_gem" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.3"
+                    android:src = "@drawable/ui_cross" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_get_gem"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1.6"
+                    android:text = "0000"
+                    android:textColor = "#008099"
+                    android:textSize = "18sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                           
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation = "horizontal"
+                android:weightSum = "10" >
+                
+                <ImageView
+	                android:layout_width = "0dp"
+	                android:layout_height = "match_parent"
+	                android:layout_weight = "4"
+	                android:src = "@drawable/gameover_text_total" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.6"
+                    android:src = "@drawable/coin_01_bronze" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.3"
+                    android:src = "@drawable/ui_cross" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_total_coin"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "2.4"
+                    android:text = "000000"
+                    android:textColor = "#008099"
+                    android:textSize = "18sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.7"
+                    android:src = "@drawable/item_04_gem" />
+                
+                <ImageView
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "0.3"
+                    android:src = "@drawable/ui_cross" />
+                
+                <TextView
+                    android:id = "@+id/text_gameover_total_gem"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1.6"
+                    android:text = "0000"
+                    android:textColor = "#008099"
+                    android:textSize = "18sp"
+                    android:textStyle = "bold"
+                    android:gravity = "center" />
+                           
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width = "400dp"
+        android:layout_height = "80dp"
+        android:paddingTop = "16dp"
+        android:src = "@drawable/gameover_text_gameover"
+        android:layout_above = "@id/layout_gameover"
+        android:layout_centerHorizontal = "true" />
+    
+    <RelativeLayout
+        android:layout_width = "400dp"
+        android:layout_height = "64dp"
+        android:layout_below = "@id/layout_gameover"
+        android:layout_centerHorizontal = "true" >
+        
+        <ImageView
+	        android:id = "@+id/btn_gameover_retry"
+	        android:layout_width = "160dp"
+	        android:layout_height = "match_parent"
+	        android:src = "@drawable/gameover_btn_retry"
+	        android:layout_alignParentLeft = "true"
+	        android:clickable = "true"
+	        android:onClick = "mOnClick" />
+        
+        <ImageView
+	        android:id = "@+id/btn_gameover_exit"
+	        android:layout_width = "160dp"
+	        android:layout_height = "match_parent"
+	        android:src = "@drawable/title_menu_exit"
+	        android:layout_alignParentRight = "true"
+	        android:clickable = "true"
+	        android:onClick = "mOnClick" />
+        
+    </RelativeLayout>
+    
+    
+    
+</RelativeLayout>

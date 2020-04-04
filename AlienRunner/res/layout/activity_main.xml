@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/title_runner"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width = "160dp"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentBottom = "true"
+        android:orientation = "vertical"
+        android:layout_marginRight = "40dp"
+        android:layout_marginBottom = "24dp" >
+        
+        <ImageView
+            android:id = "@+id/btn_title_gameStart"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:src = "@drawable/title_menu_game_start"
+            android:clickable = "true"
+            android:onClick = "mOnClick" />
+        
+        <ImageView
+            android:id = "@+id/btn_title_shop"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:src = "@drawable/title_menu_shop"
+            android:clickable = "true"
+            android:onClick = "mOnClick" />
+        
+        <ImageView
+            android:id = "@+id/btn_title_setting"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:src = "@drawable/title_menu_setting"
+            android:clickable = "true"
+            android:onClick = "mOnClick" />
+        
+        <ImageView
+            android:id = "@+id/btn_title_exit"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:src = "@drawable/title_menu_exit"
+            android:clickable = "true"
+            android:onClick = "mOnClick" />
+     
+    </LinearLayout>
+    
+    <!-- dialog setting -->
+    <include
+        android:id = "@+id/dialog_setting"
+        layout = "@layout/dialog_setting"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_centerInParent = "true"
+        android:visibility = "gone" />
+    
+    <!-- dialog quit -->
+    <include
+	    android:id = "@+id/dialog_game_exit"
+	    layout = "@layout/dialog_exit"
+	    android:layout_width = "match_parent"
+	    android:layout_height = "match_parent"
+	    android:visibility = "gone" />
+        
+</RelativeLayout>

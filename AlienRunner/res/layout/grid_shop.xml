@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width = "150dp"
+        android:layout_height = "152dp"
+        android:orientation = "vertical"
+        android:padding = "8dp"
+        android:background = "#ffd604"
+        android:weightSum = "10"
+        android:layout_centerInParent = "true" >
+        
+        <TextView
+            android:id = "@+id/text_product_name"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "2"
+            android:text = "HP 포션"
+            android:textSize = "18sp"
+            android:textColor = "#007e99"
+            android:textStyle = "bold"
+            android:gravity = "center" />
+        
+        <ImageView
+            android:id = "@+id/img_product"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "6"
+            android:padding = "8dp"
+            android:background = "#ffe977"
+            android:src = "@drawable/item_01_hp" />
+        
+        <TextView
+            android:id = "@+id/text_product_price"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "2"
+            android:text = "5000"
+            android:padding = "4dp"
+            android:textColor = "#bc009f"
+            android:gravity = "center" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

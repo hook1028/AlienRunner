@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.lastviolet.alienrunner.GameView
+        android:id = "@+id/gameView"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent" />
+    
+    <LinearLayout
+        android:id = "@+id/layout_score"
+        android:layout_width = "150dp"
+        android:layout_height = "60dp"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft = "true"
+        android:layout_marginLeft = "8dp"
+        android:layout_marginTop = "8dp"
+        android:orientation = "vertical"
+        android:padding = "4dp"
+        android:background="@drawable/ui_panel"
+        android:weightSum="10" >
+        
+        <TextView
+	        android:id = "@+id/text_score"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "6"
+            android:text = "0000000"
+            android:textSize = "24sp"
+            android:textStyle = "bold"
+            android:textColor = "#ffd505"
+            android:gravity = "center" />
+        
+        <TextView
+	        android:id = "@+id/text_champion"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "4"
+            android:text = "0000000"
+            android:textSize = "18sp"
+            android:textStyle = "bold"
+            android:textColor = "#ff7a14"
+            android:gravity = "center" />
+           
+    </LinearLayout>
+    
+   <LinearLayout
+   	    android:layout_width = "64dp"
+   	    android:layout_height = "30dp"
+   	    android:layout_marginLeft = "8dp"
+   	    android:layout_below = "@id/layout_score"
+   	    android:orientation = "horizontal"
+   	    android:gravity = "center"
+   	    android:padding = "4dp"
+   	    android:background = "@drawable/ui_panel" >
+       
+       <ImageView
+           android:id = "@+id/img_hp_01"
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/hp_01" />
+       
+       <ImageView
+           android:id = "@+id/img_hp_02"
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/hp_01" />
+       
+       <ImageView
+           android:id = "@+id/img_hp_03"
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/hp_01" />
+       
+       <ImageView
+           android:id = "@+id/img_hp_04"
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/hp_01" />       
+           
+   	</LinearLayout>    
+    
+   	<LinearLayout
+   	    android:id = "@+id/layout_coin_gem"
+        android:layout_width = "240dp"
+        android:layout_height = "50dp"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_marginTop = "8dp"
+        android:layout_marginRight = "8dp"
+        android:padding = "8dp"
+        android:orientation = "horizontal"
+        android:background = "@drawable/ui_panel"
+        android:gravity = "center"
+        android:weightSum = "16" >
+        
+       <ImageView
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "2"
+           android:src = "@drawable/coin_01_bronze" />
+       
+       <ImageView
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/ui_cross" />
+       
+       <TextView
+           android:id = "@+id/text_coin"
+           android:layout_width = "0dp"
+           android:layout_height = "match_parent"
+           android:layout_weight = "6"
+           android:gravity = "center"
+           android:text = "000000"
+           android:textSize = "22sp"
+           android:textStyle = "bold"
+           android:textColor = "#ffd505" />
+       
+       <ImageView
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "2"
+           android:src = "@drawable/item_04_gem" />
+       
+       <ImageView
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/ui_cross" />
+       
+       <TextView
+           android:id = "@+id/text_gem"
+           android:layout_width = "0dp"
+           android:layout_height = "match_parent"
+           android:layout_weight = "4"
+           android:gravity = "center"
+           android:text = "0000"
+           android:textSize = "22sp"
+           android:textStyle = "bold"
+           android:textColor = "#ffd505" />
+   
+    </LinearLayout>
+    
+   	<LinearLayout
+   	    android:id = "@+id/layout_selectedItem"
+   	    android:layout_width = "80dp"
+   	    android:layout_height = "40dp"
+   	    android:layout_marginRight = "8dp"
+   	    android:layout_below = "@id/layout_coin_gem"
+   	    android:layout_alignParentRight = "true"
+   	    android:orientation = "horizontal"
+   	    android:gravity = "center"
+   	    android:padding = "8dp"
+   	    android:background = "@drawable/ui_panel"
+   	    android:visibility = "gone" >
+   	    
+   	   <ImageView
+   	       android:id = "@+id/img_set_item"
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "2"
+           android:src = "@drawable/item_01_hp" />
+       
+       <ImageView
+           android:layout_width = "0dp"
+           android:layout_height = "wrap_content"
+           android:layout_weight = "1"
+           android:src = "@drawable/ui_cross" />
+       
+       <TextView
+           android:id = "@+id/text_item"
+           android:layout_width = "0dp"
+           android:layout_height = "match_parent"
+           android:layout_weight = "2"
+           android:gravity = "center"
+           android:text = "00"
+           android:textSize = "22sp"
+           android:textStyle = "bold"
+           android:textColor = "#ffd505" />
+   	</LinearLayout>
+   	
+   	<ImageView
+   	    android:id = "@+id/btn_pause_resume"
+   	    android:layout_width = "50dp"
+   	    android:layout_height = "50dp"
+   	    android:layout_marginTop = "8dp"
+   	    android:layout_toLeftOf = "@id/layout_coin_gem"
+   	    android:src = "@drawable/btn_game_pause"
+   	    android:clickable = "true" 
+   	    android:onClick = "mOnClick" />
+   	
+   	<!-- PauseDialog import -->
+	<include
+	    android:id = "@+id/dialog_pause"
+	    layout = "@layout/dialog_game_pause"
+	    android:layout_width = "match_parent"
+	    android:layout_height = "match_parent"
+	    android:visibility = "gone" />
+	
+	<!-- QuitDialog import -->
+	<include
+	    android:id = "@+id/dialog_game_exit"
+	    layout = "@layout/dialog_exit"
+	    android:layout_width = "match_parent"
+	    android:layout_height = "match_parent"
+	    android:visibility = "gone" />
+    
+</RelativeLayout>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "#99000000" />
+    
+	<LinearLayout
+	    android:layout_width = "240dp"
+	    android:layout_height = "240dp"
+	    android:layout_centerInParent = "true"
+	    android:background = "@drawable/dialog_setting"
+	    android:orientation = "vertical"
+	    android:weightSum = "12" >
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="4" />
+	    
+	    <LinearLayout
+	        android:layout_width = "match_parent"
+	        android:layout_height = "0dp"
+	        android:layout_weight = "2"
+	        android:orientation = "horizontal"
+	        android:paddingLeft = "16dp"
+	        android:paddingRight = "16dp"
+	        android:weightSum = "3" >
+	    
+	        <ImageView
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "2"
+	            android:src = "@drawable/dialog_setting_music" />
+	        
+	        <ImageView
+	            android:id = "@+id/btn_setting_dialog_music"
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "1"
+	            android:padding = "8dp"
+	            android:clickable = "true"
+	            android:onClick = "dialogOnClick" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width = "match_parent"
+	        android:layout_height = "0dp"
+	        android:layout_weight = "2"
+	        android:orientation = "horizontal"
+	        android:paddingLeft = "16dp"
+	        android:paddingRight = "16dp"
+	        android:weightSum = "3" >
+	    
+	        <ImageView
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "2"
+	            android:src = "@drawable/dialog_setting_sound" />
+	        
+	        <ImageView
+	            android:id = "@+id/btn_setting_dialog_sound"
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "1"
+	            android:padding = "8dp"
+	            android:clickable = "true"
+	            android:onClick = "dialogOnClick" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width = "match_parent"
+	        android:layout_height = "0dp"
+	        android:layout_weight = "2"
+	        android:orientation = "horizontal"
+	        android:paddingLeft = "16dp"
+	        android:paddingRight = "16dp"
+	        android:weightSum = "3" >
+	    
+	        <ImageView
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "2"
+	            android:src = "@drawable/dialog_setting_vibrate" />
+	        
+	        <ImageView
+	            android:id = "@+id/btn_setting_dialog_vibrate"
+	            android:layout_width = "0dp"
+	            android:layout_height = "match_parent"
+	            android:layout_weight = "1"
+	            android:padding = "8dp"
+	            android:clickable = "true"
+	            android:onClick = "dialogOnClick" />
+	        
+	    </LinearLayout>
+	    
+	    <ImageView
+	        android:id = "@+id/btn_setting_dialog_ok"
+	        android:layout_width = "match_parent"
+	        android:layout_height = "0dp"
+	        android:layout_weight = "1"
+	        android:src = "@drawable/btn_ok"
+	        android:clickable = "true"
+	        android:onClick = "dialogOnClick" />
+    
+	</LinearLayout>
+    
+    
+</RelativeLayout>
